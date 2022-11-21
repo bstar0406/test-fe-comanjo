@@ -1,0 +1,154 @@
+.getStarted_section {
+  margin-top: 150px;
+}
+
+.getStarted_title_group {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.getStarted_title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  color: #067090;
+  text-align: center;
+}
+
+.different_intro {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #8D8989;
+  margin-left: -61px;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #8D8989;
+  text-align: left;
+}
+
+.getStarted_intro {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.getStarted_left,
+.getStarted_right {
+  width: 50%;
+  margin: 0 auto
+}
+
+.getStarted_left img,
+.getStarted_right img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.getStarted_content {
+  background: #F0EBEB;
+  border-radius: 54px;
+  text-align: center;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 130px;
+  position: relative;
+  z-index: -1;
+}
+
+
+.getStarted_content_title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #067090;
+}
+
+.getStarted_content_intro {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.getStarted_content button {
+  padding: 22px 80px;
+  background: #111D5E;
+  border-radius: 31px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+@media(max-width:1024px) {
+  .getStarted_control {
+    display: block;
+  }
+
+  .getStarted_left,
+  .getStarted_right {
+    width: 90%;
+  }
+
+  .getStarted_right {
+    margin-top: 80px;
+  }
+}
+
+@media(max-width:768px) {
+
+  .getStarted_content_title,
+  .getStarted_title {
+    font-size: 36px;
+  }
+
+  .getStarted_content_intro,
+  .getStarted_intro {
+    font-size: 24px;
+  }
+
+  .getStarted_content button {
+    font-size: 36px;
+    padding: auto;
+  }
+}
+
+@media(max-width:540px) {
+
+  .getStarted_content_title,
+  .getStarted_title {
+    font-size: 24px;
+  }
+
+  .getStarted_content_intro,
+  .getStarted_intro {
+    font-size: 16px;
+  }
+
+  .getStarted_content button {
+    font-size: 24px;
+  }
+}

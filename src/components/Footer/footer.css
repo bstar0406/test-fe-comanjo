@@ -1,0 +1,112 @@
+.footer_top_section {
+  background: #F7F7F7;
+  padding: 73px 0px;
+  border-bottom: 3px solid #F1F1F1;
+}
+
+.footer_top_container,
+.footer_bottom_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer_find_job p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #158D99;
+  max-width: 400px;
+}
+
+.footer_find_job button {
+  background: #2571E9;
+  border-radius: 94px;
+  padding: 15px 50px;
+  border: none;
+  margin-top: 56px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.footer_top_item h4 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.footer_top_item li {
+  list-style-type: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  color: #939393;
+}
+
+.footer_top_item div {
+  cursor: pointer;
+}
+
+.footer_bottom_section {
+  background: #F7F7F7;
+  padding: 47px 0px;
+}
+
+
+.footer_bottom_left p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+}
+
+.social_group img {
+  cursor: pointer;
+}
+
+@media(max-width:768px) {
+
+  .footer_top_container,
+  .footer_bottom_container {
+    width: 95%;
+    text-align: center;
+  }
+
+  .footer_top_control {
+    display: block;
+  }
+
+
+  .footer_find_job p {
+    max-width: initial;
+  }
+
+  .footer_top_item h4 {
+    margin: 24px 0px
+  }
+
+  .footer_bottom_control {
+    display: block;
+  }
+}
+
+@media(max-width:540px) {
+  .footer_find_job p {
+    font-size: 36px;
+  }
+
+  .social_group {
+    justify-content: center;
+    margin-top: 36px;
+    gap: 10px
+  }
+}

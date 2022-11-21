@@ -1,0 +1,118 @@
+.header_section {
+  position: fixed;
+  width: 100%;
+  background: #111D5E;
+  top: 0;
+  z-index: 24;
+}
+
+.header_container {
+  width: 90%;
+  margin: 0 auto
+}
+
+.header_control {
+  padding: 24px 0px
+}
+
+.header_control a {
+  cursor: pointer;
+}
+
+.header_lists li {
+  list-style-type: none;
+  margin: 0px 24px
+}
+
+.meritocracy_count {
+  margin-right: 148px;
+  font-size: 32px !important;
+}
+
+.bm-burger-button {
+  display: none;
+}
+
+@media(max-width:1024px) {
+  .meritocracy_count {
+    margin-right: 16px;
+  }
+}
+
+@media(max-width:768px) {
+  .header_control {
+    padding: 16px 0px;
+  }
+
+  .header_lists {
+    display: none;
+  }
+
+  .bm-item {
+    display: inline-block;
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: black;
+    transition: color 0.2s;
+  }
+
+  .bm-item:hover {
+    color: white;
+  }
+
+  .bm-burger-button {
+    display: block;
+    position: fixed;
+    width: 24px;
+    height: 22px;
+    right: 18px;
+    top: 42px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #d65cf1;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  .bm-cross-button button {
+    background: black;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: black;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #d65cf1;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .header-right-burger {
+    display: flex;
+  }
+}
