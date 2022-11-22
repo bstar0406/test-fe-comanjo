@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react"
+import { useEffect } from "react"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import './Home.css'
@@ -16,8 +16,7 @@ const Home = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <Fragment>
-      <div className="px-28">
+    <div>
       <div className="arrow1_img" >
         <img src="assets/arrow1.png" alt="arrow" className="!h-[130px]" />
       </div>
@@ -28,8 +27,7 @@ const Home = () => {
       <Hire />
       <GetStarted />
       <Mind /> 
-      </div>
-    </Fragment>
+    </div>
   )
 }
 export default Home
