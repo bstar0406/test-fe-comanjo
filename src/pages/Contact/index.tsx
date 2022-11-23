@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="flex items-center justify-center px-2 lg:px-0 w-full h-full py-40" >
             <div className='contact-box rounded-2xl bg-[#FFFFFF] p-10 text-left text-[#111D5E] z-10 border-2 py-16'>
                 <div className='mb-1 text-3xl font-bold'>Get In Touch</div>
-                <div className='mb-5 text-xl  text-[#111D5E]'>We are here for you. How can we help?</div>
+                <div className='mb-5 text-[#111D5E]'>We are here for you. How can we help?</div>
                 <div className='flex gap-10'>
                     <div className='right-box flex justify-between flex-col text-center'>
                         <input type='text' placeholder='Enter Your Name' className="pl-5 h-[48px] focus-visible:border-1 focus-visible:border-[#70BBFD] focus-visible:outline-none rounded w-full border border-gray-300"/>
