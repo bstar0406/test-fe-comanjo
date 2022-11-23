@@ -1,6 +1,7 @@
-import { Fragment } from "react";
 import './getStarted.scss'
 import { Fade, Zoom } from 'react-awesome-reveal';
+import RightImage from "../../../assets/images/getStarted2.png"
+import LeftImage from "../../../assets/images/getStarted1.png"
 
 const GetStarted = () => {
   return (
@@ -15,7 +16,7 @@ const GetStarted = () => {
       <div className="w-full getStared-register" >
         <Zoom>
           <div className="getStarted-left" data-aos="zoom-out" data-aos-duration="1500"  >
-            <img alt="img1" src="assets/getStarted1.png" />
+            <img alt="img1" src={LeftImage} />
             <div className="getStarted-content">
               <p className="getStarted-content-title" >Registartion for Job-seeker;</p>
               <p className="getStarted-content-intro " >Lörem ipsum astrofagisk sad, i dykädade. Monor syl respektive personlig därför att anening yra i dälogi. Pode spegisk</p>
@@ -26,12 +27,12 @@ const GetStarted = () => {
         </Zoom>
         <Zoom>
           <div className="getStarted-left" data-aos="zoom-out" data-aos-duration="1500"  >
-            <img alt="img1" src="assets/getStarted2.png" />
+            <img alt="img1" src={RightImage} />
             <div className="getStarted-content">
               <p className="getStarted-content-title" >Registartion for Job-seeker;</p>
               <p className="getStarted-content-intro " >Lörem ipsum astrofagisk sad, i dykädade. Monor syl respektive personlig därför att anening yra i dälogi. Pode spegisk</p>
 
-              <button className="register-button" >Register</button>
+              <div className="register-button" >Register</div>
             </div>
           </div>
         </Zoom>

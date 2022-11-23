@@ -1,0 +1,14 @@
+.contact-box {
+  width: 50%;
+}
+.submit-button:hover {
+  background-color: #ffffff;
+  color: #111D5E;
+  border: 2px solid #111D5E;
+}
+.right-box {
+  width: 60%;
+}
+.left-box {
+  width: 40%;
+}

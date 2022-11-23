@@ -1,10 +1,10 @@
 import './banner.css'
 import React from 'react';
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./banner.css"
 import { useEffect } from "react";
+import HomeBanner from  "../../../assets/images/woman.png"
 
 const Banner = () => {
   useEffect(function () {
@@ -14,7 +14,7 @@ const Banner = () => {
     <div className="home_banner_section">
       <div className='home_banner_container'>
         <div className='container_left'>
-          <img alt="img1" src='assets/rectangle1.png' className ='!h-[20px]' />
+          <img alt="img1" src={HomeBanner} className ='!h-[20px]' />
           <p className="title_One" >HIRE</p>
           <p className="title_two"  >FOR VALUES</p>
           <p className="home_banner_intro" >
@@ -25,14 +25,14 @@ const Banner = () => {
         <div className='container_right'>
           <div className='mark-card'>
             <div className="home_banner_card" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500" >
-              <img alt="img1" src="assets/woman.png" />
+              <img alt="img1" src={HomeBanner} />
               <p className="card-text">Lörem ipsum vor megan. </p>
               <div className='card-button' style={{ cursor: `pointer` }}>Follow</div>
               <div className='banner-mark-resume'>Resume Matched</div>
               <div className='banner-mark-schedule'>Schedule</div>
             </div>
           </div>
-          <img alt='Home-Banner' src='assets/woman.png' data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" />
+          <img alt='Home-Banner' src={HomeBanner} data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" />
         </div>
       </div>
       <div className='home-banner-bottom'>

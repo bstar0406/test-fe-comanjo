@@ -28,44 +28,44 @@ const Header = () => {
             <div className="header_logo" >
               <img src={Logo} alt="logo" width="250px" />
             </div>
-            <div className="header_lists flex items-center justify-between text-lg" >
-              <div className="mr-5  text-white hover:text-yellow-500">
-                <Link to={'/'} className="no-underline">
+            <div className="header_lists flex items-center gap-6 text-lg" >
+              <div className="text-white hover:text-yellow-500">
+                <Link to={'/'} className="no-underline text-xl">
                   Home
                 </Link>
               </div>
-              <div className="mr-5  text-orange-500 hover:text-yellow-500">
-                <Link to={'/jobboard'} className="no-underline">
+              <div className="text-white hover:text-yellow-500">
+                <Link to={'/jobboard'} className="no-underline text-xl">
                   JobBoard
                 </Link>
               </div>
-              <div className="mr-5  text-white hover:text-yellow-500">
-                <Link to={'/benefits'} className="no-underline">
+              <div className="text-white hover:text-yellow-500">
+                <Link to={'/benefits'} className="no-underline text-xl">
                   Benefits
                 </Link>
               </div>
-              <div className="mr-5  text-white hover:text-yellow-500">
-                <Link to={'/prices'} className="no-underline">
+              <div className="text-white hover:text-yellow-500">
+                <Link to={'/prices'} className="no-underline text-xl">
                   Prices
                 </Link>
               </div>
-              <div className="mr-5  text-white hover:text-yellow-500">
-                <Link to={'/technology'} className="no-underline">
+              <div className="text-white hover:text-yellow-500">
+                <Link to={'/technology'} className="no-underline text-xl">
                   Technology
                 </Link>
               </div>
-              <div className="mr-5  text-white hover:text-yellow-500">
-                <Link to={'/contact'} className="no-underline">
+              <div className="text-white hover:text-yellow-500">
+                <Link to={'/contact'} className="no-underline text-xl">
                   Contact
                 </Link>
               </div>
-              {user.type ==='company' && <div className="mr-5  text-white hover:text-yellow-500">
-                <Link to={'/jobcontract'} className="no-underline">
+              {user.type ==='company' && <div className="text-white hover:text-yellow-500">
+                <Link to={'/jobcontract'} className="no-underline text-xl">
                   JobContract
                 </Link>
               </div>}
-              {user.type === null &&<div className="mr-5  text-white hover:text-yellow-500">
-                <Link to={'/auth/signin'} className="no-underline">
+              {user.type === null &&<div className="text-white hover:text-yellow-500">
+                <Link to={'/auth/signin'} className="no-underline text-xl">
                   SignIn
                 </Link>
               </div>}

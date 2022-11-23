@@ -1,6 +1,7 @@
 import { Fragment } from "react"
 import './technology.css'
 import { Fade, Zoom } from 'react-awesome-reveal';
+import HomeTechnology from "../../../assets/images/getStarted1.png"
 
 const Technology = () => {
   return (
@@ -22,7 +23,7 @@ const Technology = () => {
             </div>
           </div>
           <div className="technology_right_image" data-aos="zoom-out" data-aos-duration="2000" >
-            <Zoom><img alt="img1" src="assets/technology.png" /></Zoom>
+            <Zoom><img alt="img1" src={HomeTechnology} /></Zoom>
           </div>
         </div>
       </div>

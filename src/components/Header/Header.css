@@ -7,7 +7,7 @@
 }
 
 .header_container {
-  width: 90%;
+  width: 1280px;
   margin: 0 auto
 }
 
@@ -72,7 +72,7 @@
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: #d65cf1;
+    background: #ffffff;
   }
 
   /* Position and sizing of clickable cross button */
@@ -92,7 +92,7 @@
 
   /* General sidebar styles */
   .bm-menu {
-    background: #d65cf1;
+    background: #111D5E;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }

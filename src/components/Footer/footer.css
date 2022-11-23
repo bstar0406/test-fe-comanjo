@@ -6,52 +6,42 @@
 
 .footer_top_container,
 .footer_bottom_container {
-  width: 90%;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: auto;
 }
 
-.footer_find_job p {
-  font-family: 'Poppins';
-  font-style: normal;
+.footer-find-job p {
   font-weight: 600;
-  font-size: 40px;
-  color: #158D99;
+  color: #20AAB7;
   max-width: 400px;
 }
 
-.footer_find_job button {
-  background: #2571E9;
-  border-radius: 94px;
-  padding: 15px 50px;
+.footer-find-job button {
+  background: #111D5E;
+  border-radius: 25px;
+  width: 200px;
+  padding: 10px;
   border: none;
   margin-top: 56px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 20px;
   color: #FFFFFF;
 }
 
-.footer_top_item h4 {
-  font-family: 'Poppins';
-  font-style: normal;
+.footer-top-item {
+  font-weight: 400;
+  font-size: 20px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-top-item h4 {
   font-weight: 600;
-  font-size: 32px;
   line-height: 60px;
   color: #000000;
 }
 
-.footer_top_item li {
-  list-style-type: none;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 48px;
-  color: #939393;
-}
-
-.footer_top_item div {
+.footer-top-item div {
   cursor: pointer;
 }
 
@@ -59,11 +49,12 @@
   background: #F7F7F7;
   padding: 47px 0px;
 }
-
+.footer_bottom_control {
+  max-width: 1280px;
+  align-items: flex-end;
+}
 
 .footer_bottom_left p {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   color: #000000;
@@ -77,7 +68,6 @@
 
   .footer_top_container,
   .footer_bottom_container {
-    width: 95%;
     text-align: center;
   }
 
@@ -86,11 +76,11 @@
   }
 
 
-  .footer_find_job p {
+  .footer-find-job p {
     max-width: initial;
   }
 
-  .footer_top_item h4 {
+  .footer-top-item h4 {
     margin: 24px 0px
   }
 
@@ -100,7 +90,7 @@
 }
 
 @media(max-width:540px) {
-  .footer_find_job p {
+  .footer-find-job p {
     font-size: 36px;
   }
 
