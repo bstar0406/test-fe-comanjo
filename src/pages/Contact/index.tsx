@@ -36,7 +36,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <img src={Polygon} alt="SignBack" className='top-[0px] w-full absolute h-[100%]' />
+            <img src={Polygon} alt="SignBack" className='top-[0px] w-full absolute h-[100%]' style={{zIndex: "-10"}} />
         </div>
     )
 }
