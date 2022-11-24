@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import "./banner.css"
 import { useEffect } from "react";
 import HomeBanner from  "../../../assets/images/woman.png"
+import BannerRectangular from "../../../assets/images/rectangle1.png"
 
 const Banner = () => {
   useEffect(function () {
@@ -14,7 +15,7 @@ const Banner = () => {
     <div className="home_banner_section">
       <div className='home_banner_container'>
         <div className='container_left'>
-          <img alt="img1" src={HomeBanner} className ='!h-[20px]' />
+          <img alt="img1" src={BannerRectangular} className ='!h-[20px]' />
           <p className="title_One" >HIRE</p>
           <p className="title_two"  >FOR VALUES</p>
           <p className="home_banner_intro" >

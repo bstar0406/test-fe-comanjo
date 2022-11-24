@@ -62,7 +62,7 @@ function App() {
 
         <Route path="/auth" element={<FullLayout />}>
           <Route path="signin" element={<SignIn />} />
-          <Route path="signup" element={<FullLayout />}>
+          <Route path="signup" >
             <Route index element={<SignUp />} />
             <Route path="company" element={<Company />} />
             <Route path="jobseeker" element={<JobSeeker />} />

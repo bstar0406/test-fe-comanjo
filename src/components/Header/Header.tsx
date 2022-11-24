@@ -7,6 +7,7 @@ import { useAppSelector, useAppDispatch} from '../../redux/hooks';
 import { IUser } from "../../interfaces/interface";
 import { RootState } from "../../redux/store";
 import { userAction } from "../../redux/user/userSlice";
+
 const Header = () => {
   const user = useAppSelector((state: RootState)=> state.user)
   const dispatch = useAppDispatch();

@@ -1,31 +1,33 @@
 import { Link } from 'react-router-dom'
-import { BsArrowRightShort } from 'react-icons/bs'
-import SignBack from '../../assets/images/SignBack.png';
+import ForCompany from "../../assets/images/ForCompany.png";
+import ForSeeker from "../../assets/images/ForSeeker.png";
+import "./style.css"
 const SignUp = () => {
     return (
-        <div className="h-screen flex items-center justify-center px-2 lg:px-0 w-full" >
-            <div className='rounded-2xl bg-[#D9D9D9CC] p-5 text-center text-[#111D5E] z-10 w-full md:w-1/2 xl:w-1/3'>
-                <div className='mb-5 text-2xl font-bold'>Meritocracy Counts</div>
-                <div className='mb-5 text-xl font-bold'>Sign Up</div>
-                <div className='block h-[16px] bg-[#111D5E] mb-[50px]'></div>
-                <Link to='/auth/signup/jobseeker'>
-                    <button className="bg-[#F3C623] hover:bg-[#FFCF43] rounded-lg text-[#111D5E] font-bold font-sm w-full h-[38px] mb-[40px] relative">
-                        <span className='text-[#111D5E] '>
-                            For Job Seeker
-                        </span>
-                        <BsArrowRightShort className='absolute font-bold text-[30px] right-2 top-[4px]' />
-                    </button>
-                </Link>
-                <Link to='/auth/signup/company'>
-                    <button className="bg-[#F3C623] hover:bg-[#FFCF43] rounded-lg text-[#111D5E] font-bold font-sm w-full h-[38px] mb-[40px] relative">
-                        <span className='text-[#111D5E] '>
-                            For Companies
-                        </span>
-                        <BsArrowRightShort className='absolute font-bold text-[30px] right-2 top-[4px]' />
-                    </button>
-                </Link>
+        <div className="flex" style={{height: "90vh"}}>
+            <div className='signUp-box py-14 px-14 text-[#111D5E] m-auto'>
+                <div className='mb-10 text-3xl font-semibold text-center'>Join as a Company or Seeker</div>
+                <div className='flex items-center justify-center gap-14'>
+                    <Link to='/auth/signup/company'>
+                        <div className='individual-box p-5 max-w-xs'>
+                            <img className='h-24' src={ForCompany} alt="ForCompany" />
+                            <div className='mt-5 text-xl font-semibold'>We are a Company, hiring Job Seeker</div>
+                        </div>
+                    </Link>
+                    <Link to='/auth/signup/jobseeker'>
+                        <div className='individual-box p-5 max-w-xs'>
+                            <img className='h-24' src={ForSeeker} alt="ForCompany" />
+                            <div className='mt-5 text-xl font-semibold'>I am a Job Seeker, looking for Company</div>
+                        </div>
+                    </Link>
+                </div>
+                <div className='flex items-center justify-center mt-12 gap-12'>
+                    Already Have an account?
+                    <Link to='/auth/signin'>
+                        <span className='font-semibold'>Log in</span>
+                    </Link>
+                </div>
             </div>
-            <img src={SignBack} alt="SignBack" className='h-full w-full absolute' />
         </div>
     )
 }
