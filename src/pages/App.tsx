@@ -45,16 +45,18 @@ function App() {
           <Route index element={<Contact />} />
         </Route>
         <Route path="/company-profile" element={<MainLayout />}>
-          <Route index element={user.type!==null?<CompanyProfile />:<Navigate replace to="/" />} />
+          {/* <Route index element={user.type!==null?<CompanyProfile />:<Navigate replace to="/" />} /> */}
+          <Route index element={<CompanyProfile />} />
         </Route>
         <Route path="/seeker-profile" element={<MainLayout />}>
-          <Route index element={user.type!==null?<SeekerProfile />:<Navigate replace to="/" />} />
+          {/* <Route index element={user.type!==null?<SeekerProfile />:<Navigate replace to="/" />} /> */}
+          <Route index element={<SeekerProfile />} />
         </Route>
         <Route path="/company-review" element={<MainLayout />}>
           <Route path=":id" element={user.type!==null?<CompanyReview />:<Navigate replace to="/" />} />
         </Route>
         <Route path="/seeker-review" element={<MainLayout />}>
-          <Route path=":id" element={user.type!==null?<SeekerReview />:<Navigate replace to="/" />} />
+          <Route path=":id" element={<SeekerReview />} />
         </Route>
         <Route path="/jobcontract" element={<MainLayout />}>
           <Route index element={user.type!==null?<JobContract />:<Navigate replace to="/" />} />

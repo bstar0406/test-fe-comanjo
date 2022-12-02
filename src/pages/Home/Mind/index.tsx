@@ -22,7 +22,7 @@ const Mind = () => {
                 <p className="content-title">International working visa</p>
                 <div className="content-button" >
                   <div>What you need to know</div>
-                  <img alt="img1" src="assets/arrow-icon.png" />
+                  <img alt="img1" src={Arrow} />
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@ const Mind = () => {
                 <p className="content-title">Your work contract</p>
                 <div className="content-button" >
                   <div>What you need to know</div>
-                  <img alt="img1" src="assets/arrow-icon.png" />
+                  <img alt="img1" src={Arrow} />
                 </div>
               </div>
             </div>

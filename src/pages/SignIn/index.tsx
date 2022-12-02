@@ -27,7 +27,7 @@ const SignIn = () => {
         })
         if(!response.success){
             alert(response.message);
-        }else{
+        } else{
             let temp: IUser = {
                 type: response.type==='seeker'?'seeker':'company',
                 seeker: response.type==='seeker'?response.seeker:null,
