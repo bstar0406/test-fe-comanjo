@@ -45,7 +45,7 @@ const Mind = () => {
             <div className="mind-item" >
               <img alt="img1" src={MindThree}/>
               <div className="mind-content" >
-                <p className="content-title">Technologies so persons at the job</p>
+                <p className="content-title">Technologies at the job</p>
                 <div className="content-button" >
                   <div>What you need to know</div>
                   <img alt="img1" src={Arrow} />

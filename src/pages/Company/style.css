@@ -3,3 +3,12 @@
   border-radius: 20px;
   padding: 40px 80px;
 }
+.register-company {
+  height: 90vh;
+}
+@media(max-width:1024px) {
+  .register-company {
+    height: 100%;
+    padding: 50px 0px 50px 0px;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import config from '../../config';
-import Seeker from '../../assets/images/Job-seeker-profile.png';
+import Seeker from '../../assets/images/job-seeker-profile-1.png'
 import { useAppSelector, useAppDispatch } from '../../redux/hooks';
 import { RootState } from "../../redux/store";
 import { globalAction } from "../../redux/global/globalSlice";
@@ -73,11 +73,11 @@ const SeekerProfile = () => {
 	]
       
 	return (
-		<div className=' max-w-7xl m-auto py-28 flex flex-col gap-7 text-[#111D5E]'>
+		<div className=' max-w-7xl m-auto px-5 py-28 flex flex-col gap-7 text-[#111D5E]'>
 			<div className='grid grid-cols-3 gap-7 w-full  rounded' style={{border: "1px solid #111D5E"}}>
-				<div className='img-box col-span-3 lg:col-span-1 bg-[white]  rounded'>
-					<div className='flex flex-col rounded pt-7 pb-3 px-7 text-[#111D5E] bg-white gap-5 rounded'>
-						<img src={Seeker} alt="job-seeker" className='w-full rounded rounded-tl-xl' />
+				<div className='col-span-3 lg:col-span-1 bg-[white]  rounded'>
+					<div className='img-box flex flex-col rounded pt-7 pb-3 px-7 text-[#111D5E] bg-white gap-5 rounded'>
+						<img src={Seeker} alt="job-seeker" className='w-full rounded' />
 						<div className="detail-box">
 							<div className='text-3xl font-semibold mb-3'>{user.seeker?.firstname + " " + user.seeker?.lastname}</div>
 							<Rating
@@ -104,7 +104,7 @@ const SeekerProfile = () => {
 						</div>
 					</div>
 				</div>
-				<div className='experience-box col-span-3 lg:col-span-2 text-[#111D5E]  rounded py-7 '>
+				<div className='experience-box col-span-3 lg:col-span-2 text-[#111D5E]  rounded px-7 py-7 '>
 					<div className='font-semibold text-2xl'>
 						Oriented-Client Developer!
 					</div>
@@ -137,10 +137,10 @@ const SeekerProfile = () => {
 			<div className=' grid grid-cols-3 gap-7 w-full rounded' >
 				<div className='col-span-3 lg:col-span-1 rounded flex flex-col gap-7' >
 					<div className='flex items-center justify-between'>
-						<button className='rounded bg-[#111D5E] text-[white] py-2 w-48 font-semibold text-lg'>Go to Payment </button>
-						<button className='rounded bg-[#111D5E] text-[white] py-2 w-48 font-semibold text-lg'>Go to Job Board </button>
+						<button className='rounded-3xl text-lg font-semibold bg-[#111D5E] text-[white] py-2 w-48  '>Go to Payment </button>
+						<button className='rounded-3xl text-lg font-semibold bg-[#111D5E] text-[white] py-2 w-48  '>Go to Job Board </button>
 					</div>
-					<div className='rounded p-3' style={{border: "1px solid #111D5E"}}>
+					<div className='rounded px-7 py-3' style={{border: "1px solid #111D5E"}}>
 						<div className='mb-2 flex items-center justify-between'>
 							<div className='font-semibold text-lg'>Education</div>
 							<div className='dropdown text-2xl'>
@@ -160,7 +160,7 @@ const SeekerProfile = () => {
 						
 					</div>
 
-					<div className='rounded p-3' style={{border: "1px solid #111D5E"}}>
+					<div className='rounded px-7 py-3' style={{border: "1px solid #111D5E"}}>
 						<div className='mb-2 flex items-center justify-between'>
 							<div className='font-semibold text-lg'>Qualification</div>
 							<div className='dropdown text-2xl'>
@@ -180,7 +180,7 @@ const SeekerProfile = () => {
 						</div>
 					</div>
 
-					<div className='rounded p-3' style={{border: "1px solid #111D5E"}}>
+					<div className='rounded px-7 py-3' style={{border: "1px solid #111D5E"}}>
 						<div className='mb-2 flex items-center justify-between'>
 							<div className='font-semibold text-lg'>Publication</div>
 							<div className='dropdown text-2xl'>
@@ -192,10 +192,10 @@ const SeekerProfile = () => {
 							</div>	
 						</div>
 						<hr />
-						<div className='py-3'>
+						<div className='rounded py-3'>
 							<div className='font-bold mb-3'>Investigation of automated time-tracking system realization methods</div>
 							<div>Kyryll H</div>
-							<div>http://mx1.zgia.zp.ua/gazeta/konffacuv16_69.pdf</div>
+							<p className='break-all'>http://mx1.zgia.zp.ua/gazeta/konffacuv16_69.pdf</p>
 						</div>
 					</div>
 
@@ -212,7 +212,7 @@ const SeekerProfile = () => {
 						</div>
 					</div>
 					<hr />
-					<div className='py-5 px-10 flex flex-col gap-5'>
+					<div className='px-7 py-3 flex flex-col gap-5'>
 						{
 							contracts.filter((item) => item.published === "done").map((item) => {
 								return (

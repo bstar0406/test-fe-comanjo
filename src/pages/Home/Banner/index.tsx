@@ -12,7 +12,7 @@ const Banner = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="home_banner_section">
+    <div className="home_banner_section  max-w-screen-xl m-auto mt-8">
       <div className='home_banner_container'>
         <div className='container_left'>
           <img alt="img1" src={BannerRectangular} className ='!h-[20px]' />
@@ -29,9 +29,10 @@ const Banner = () => {
               <img alt="img1" src={HomeBanner} />
               <p className="card-text">Lörem ipsum vor megan. </p>
               <div className='card-button' style={{ cursor: `pointer` }}>Follow</div>
-              <div className='banner-mark-resume'>Resume Matched</div>
-              <div className='banner-mark-schedule'>Schedule</div>
+              
             </div>
+            <div className='banner-mark-resume' data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500">Resume Matched</div>
+            <div className='banner-mark-schedule' data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500">Schedule</div>
           </div>
           <img alt='Home-Banner' src={HomeBanner} data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" />
         </div>
@@ -52,7 +53,11 @@ const Banner = () => {
             <div className='item-title'>Where Do you Want to Do IT?</div>
             <div className='item-button'>Company</div>
           </div>
-          <div className='item-register'>Register</div>
+          <div className='detail-item'>
+            <div ></div>
+            <div className='item-register'>Register</div>
+          </div>
+          
         </div>
         
       </div>

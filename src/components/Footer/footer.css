@@ -1,5 +1,7 @@
-.footer_top_section {
+.footer_section {
   background: #F7F7F7;
+}
+.footer_top_section {
   padding: 73px 0px;
   border-bottom: 3px solid #F1F1F1;
 }
@@ -16,11 +18,11 @@
   max-width: 400px;
 }
 
-.footer-find-job button {
+.top-button {
   background: #111D5E;
   border-radius: 25px;
   width: 200px;
-  padding: 10px;
+  padding: 10px 30px;
   border: none;
   margin-top: 56px;
   font-weight: 400;
@@ -63,40 +65,36 @@
 .social_group img {
   cursor: pointer;
 }
-
-@media(max-width:768px) {
-
-  .footer_top_container,
-  .footer_bottom_container {
-    text-align: center;
-  }
-
-  .footer_top_control {
-    display: block;
-  }
-
-
-  .footer-find-job p {
-    max-width: initial;
-  }
-
-  .footer-top-item h4 {
-    margin: 24px 0px
-  }
-
-  .footer_bottom_control {
-    display: block;
+@media(max-width:1280px)  {
+  .footer_section {
+    padding: 0px 20px 0px 20px;
   }
 }
-
-@media(max-width:540px) {
-  .footer-find-job p {
-    font-size: 36px;
+@media(max-width:840px) {
+  .footer_bottom_left {
+    display: flex;
+    gap: 50px;
   }
-
-  .social_group {
-    justify-content: center;
-    margin-top: 36px;
-    gap: 10px
+  .left-bottom {
+    margin: 0;
+  }
+  .footer_bottom_control {
+    flex-direction: column;
+    gap: 30px;
+  }
+} 
+@media(max-width:840px) {
+  .footer-top-item {
+    display: none;
+  }
+  .top-button {
+    margin-top: 30px;
+    padding: 5px 20px;
+  }
+  .footer_top_section {
+    padding: 40px 0px;
+  }
+  .footer_bottom_section {
+    padding: 30px 0px;
   }
 }

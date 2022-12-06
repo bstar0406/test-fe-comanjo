@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import Aos from "aos";
 import "aos/dist/aos.css";
-import './Home.css'
+import './home.css'
 
 import Banner from "./Banner"
 import Different from "./Different"
@@ -16,7 +16,7 @@ const Home = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="arrow1_img" >
         <img src="assets/arrow1.png" alt="arrow" className="!h-[130px]" />
       </div>

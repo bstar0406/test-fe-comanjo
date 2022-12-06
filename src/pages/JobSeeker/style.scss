@@ -1,0 +1,33 @@
+.register-jobSeeker {
+  height: 90vh;
+}
+@media(max-width:1024px) {
+  .company-individual {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .register-jobSeeker {
+    height: 100%;
+    padding: 50px 0px 50px 0px;
+  }
+}
+@media(max-width:640px) {
+  .register-jobSeeker {
+    padding: 50px 20px;
+  }
+}
+@media(max-width:540px) {
+  .company-box {
+    padding: 40px 40px;
+  }
+  
+}
+@media(max-width:450px) {
+  .job-seeker-input-box {
+    width: 250px;
+    padding: 5px 20px 5px 20px;
+  }
+  .jobSeeker-title {
+    font-size: 25px;
+  }
+}

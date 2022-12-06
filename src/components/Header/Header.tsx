@@ -20,9 +20,9 @@ const Header = () => {
   dispatch(userAction.setUser(temp))
   }
   return (
-    <div className='bg-[#111D5E]'>
+    <div className='header_section bg-[#111D5E]'>
       <SideBar />
-      <div className='max-w-7xl m-auto text-[white] bg-[#111D5E] py-2.5 flex items-center justify-between'>
+      <div className='main-content max-w-7xl m-auto text-[white] bg-[#111D5E] py-2.5 flex items-center justify-between'>
         <img src={Logo} alt="logo" width="250px" />
         <div className='header_lists flex items-center gap-6 tex-lg'>
           <div className="text-white hover:text-yellow-500">

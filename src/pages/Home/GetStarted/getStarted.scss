@@ -2,11 +2,23 @@
   max-width: 1280px;
   margin: auto;
   margin-top: 100px;
+  @media(max-width:1280px) {
+    padding: 0px 20px 0px 20px;
+  }
+  @media(max-width:1180px) {
+    max-width: 840px;
+  }
+  @media(max-width:840px) {
+    max-width: 540px;
+  }
 }
 
 .getStarted-title-group {
   width: 70%;
   margin: 0 auto;
+  @media(max-width:1180px) {
+    width: 100%;
+  }
 }
 
 .getStarted-title {
@@ -14,6 +26,13 @@
   font-size: 50px;
   color: #20AAB7;
   text-align: center;
+  @media(max-width:1180px) {
+    font-size: 45px;
+  }
+  @media(max-width:840px) {
+    font-size: 40px;
+    line-height: 1;
+  }
 }
 
 .getStarted-intro {
@@ -21,6 +40,9 @@
   font-size: 20px;
   color: #000000;
   margin-top: 20px;
+  @media(max-width:840px) {
+    font-size: 15px;
+  }
 }
 
 .getStared-register {
@@ -28,12 +50,21 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
+  @media(max-width:840px) {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 .getStarted-left {
   img {
     width: 300px;
+    height: 300px;
     margin: auto;
+    @media(max-width:1180px) {
+      width: 250px;
+      height: 250px;
+    }
   }
   .getStarted-content {
     margin-top: -130px;
@@ -47,6 +78,9 @@
     position: relative;
     z-index: -1;
     width: 450px;
+    @media(max-width:1180px) {
+      width: 350px;
+    }
     .getStarted-content-title {
       font-weight: 600;
       font-size: 30px;
@@ -71,51 +105,5 @@
       color: #FFFFFF;
       margin: 0 auto;
     }
-  }
-}
-
-@media(max-width:1024px) {
-  .getStarted-left,
-  .getStarted-right {
-    width: 90%;
-  }
-
-  .getStarted-content {
-    margin-top: 80px;
-  }
-}
-
-@media(max-width:768px) {
-
-  .getStarted-content-title,
-  .getStarted-title {
-    font-size: 24px;
-  }
-
-  .getStarted-content-intro,
-  .getStarted-intro {
-    font-size: 18px;
-  }
-
-  .getStarted-content button {
-    font-size: 32px;
-    padding: auto;
-  }
-}
-
-@media(max-width:540px) {
-
-  .getStarted-content-title,
-  .getStarted-title {
-    font-size: 24px;
-  }
-
-  .getStarted-content-intro,
-  .getStarted_intro {
-    font-size: 16px;
-  }
-
-  .getStarted-content button {
-    font-size: 24px;
   }
 }

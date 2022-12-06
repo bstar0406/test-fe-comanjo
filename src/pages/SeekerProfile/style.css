@@ -25,3 +25,22 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+@media(max-width:1023px) {
+  .img-box {
+    flex-direction: row;
+    gap: 10%;
+  }
+  .img-box img {
+    width: 50%;
+  }
+}
+@media(max-width:615px) {
+  .img-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .img-box img {
+    width: 100%;
+  }
+}

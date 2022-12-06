@@ -5,8 +5,6 @@ import Company from '../../assets/images/company-profile.jpg';
 import { useAppSelector, useAppDispatch } from '../../redux/hooks';
 import { RootState } from "../../redux/store";
 import { globalAction } from "../../redux/global/globalSlice";
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import Rating from '@mui/material/Rating';
 import { useNavigate } from 'react-router-dom';
 import { IoMailSharp } from "react-icons/io5";
@@ -18,7 +16,6 @@ import { BiDollar } from "react-icons/bi";
 import { BiYen } from "react-icons/bi";
 import { BsThreeDots } from "react-icons/bs";
 import "./style.scss"
-import { tab } from '@testing-library/user-event/dist/tab';
 
 const CompanyProfile = () => {
 	const user = useAppSelector((state: RootState) => state.user)
@@ -171,13 +168,13 @@ const CompanyProfile = () => {
 	]
 	console.log("contracts---------", contracts)
 	return (
-		<div className="flex items-center px-3 lg:px-5 w-full h-full py-20" >
+		<div className="flex items-center px-3 lg:px-5 w-full h-full py-32" >
 			<div className="grid grid-cols-3 gap-7 w-full max-w-7xl m-auto">
 				<div className="col-span-3 lg:col-span-1 flex flex-col gap-7">
-					<div className='flex flex-col rounded p-7 text-[#111D5E] bg-white gap-5' style={{border: "1px solid #111D5E"}}>
-						<img src={Company} alt="Company" className='w-full rounded rounded-tl-xl' />
+					<div className='company-profile flex flex-col rounded p-7 text-[#111D5E] bg-white gap-5' style={{border: "1px solid #111D5E"}}>
+						<img src={Company} alt="Company" className='company-profile-img w-full rounded' />
 						<div className="detail-box">
-							<div className='text-3xl font-semibold mb-3'>Brilliant Star</div>
+							<div className='detail-box-title text-3xl font-semibold mb-3'>Brilliant Star</div>
 							<Rating
 								name="simple-controlled"
 								value={4.5}
@@ -206,12 +203,12 @@ const CompanyProfile = () => {
 					</div>
 				</div>
 				<div className="col-span-3 lg:col-span-2">
-					<div className='rounded bg-white w-full'>
-						<div  className='flex items-center gap-5'>
+					<div className='rounded bg-white w-full flex flex-col gap-7'>
+						<div  className='flex items-center justify-between flex-wrap gap-5'>
 							{
 								tabs.map((item) => {
 									return (
-										<div className={'bg-[white] text-[#111D5E] text-xl py-2 px-12 font-semibold cursor-pointer rounded mb-5' + (activeTab === item.id ? ' active' : '')} 
+										<div className={'bg-[white] text-[#111D5E] text-xl py-2 text-center font-semibold cursor-pointer rounded-3xl w-48' + (activeTab === item.id ? ' active' : '')} 
 												 onClick={() => setActiveTab(item.id)} 
 												 key={item.id} 
 												 style={{border: "2px solid #111D5E"}}>
@@ -222,7 +219,7 @@ const CompanyProfile = () => {
 							}
 						</div>
 						{
-							activeTab === 10 && <div className='px-5 py-5 flex flex-col gap-5 text-[#111D5E]' style={{border: "1px solid #111D5E"}}>
+							activeTab === 10 && <div className='rounded px-10 py-5 flex flex-col gap-5 text-[#111D5E]' style={{border: "1px solid #111D5E"}}>
 							{
 								staticDraft.map((item) => {
 									return(
@@ -281,7 +278,7 @@ const CompanyProfile = () => {
 						</div>
 						}
 						{
-							activeTab === 11 && <div className='px-10 py-5 flex flex-col gap-5 text-[#111D5E]'>
+							activeTab === 11 && <div className='rounded px-10 py-5 flex flex-col gap-5 text-[#111D5E]' style={{border: "1px solid #111D5E"}}>
 							{
 								staticOffer.map((item) => {
 									return(
@@ -331,7 +328,7 @@ const CompanyProfile = () => {
 							</div>
 						}
 						{
-							activeTab === 12 && <div className='px-10 py-5 flex flex-col gap-5 text-[#111D5E]'>
+							activeTab === 12 && <div className='rounded px-10 py-5 flex flex-col gap-5 text-[#111D5E]' style={{border: "1px solid #111D5E"}}>
 							{
 								staticTaken.map((item) => {
 									return(

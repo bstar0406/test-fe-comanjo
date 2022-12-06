@@ -8,13 +8,13 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="footer_section z-100" >
-      <div className="footer_top_section" >
+    <div className="footer_section  z-100" >
+      <div className="footer_top_section max-w-screen-xl m-auto" >
         <div className="footer_top_container" >
-          <div className="footer_top_control flex gap-36" >
+          <div className="footer_top_control flex justify-between" >
             <div className="footer-find-job" >
-              <p className="!text-3xl"> Stay up to the date with the latest job opportunities</p>
-              <button className="!text-xl !py-3 !px-10">Find Jobs</button>
+              <p className="top-description !text-3xl"> Stay up to the date with the latest job opportunities</p>
+              <button className="top-button !text-xl">Find Jobs</button>
             </div>
             <div className="footer-top-item flex" >
               <h4 className="!text-2xl">Explore</h4>
@@ -30,23 +30,27 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer_bottom_section" >
+      <div className="footer_bottom_section max-w-screen-xl m-auto" >
         <div className="footer_bottom_container" >
           <div className="footer_bottom_control flex justify-between " >
             <div className="footer_bottom_left" >
-              <p>Copyright © 2021 My Job Matcher Inc.</p>
-              <p>All rights reserved </p>
-              <p className="mt-8" >My Job Matcher Inc. DBA Job.com, 108 Wild Basin Road Suite 250,</p>
-              <p>TX 78746</p>
+              <div>
+                <p>Copyright © 2021 My Job Matcher Inc.</p>
+                <p>All rights reserved </p>
+              </div>
+              <div>
+                <p className=" left-bottom mt-8" >My Job Matcher Inc. DBA Job.com, 108 Wild Basin Road Suite 250,</p>
+                <p>TX 78746</p>
+              </div>
             </div>
             <div className="footer_bottom_right" >
               <div className="social_group flex items-center gap-10 " >
-                <AiOutlineInstagram style={{fontSize: "40px"}} />
-                <AiOutlineTwitter style={{fontSize: "40px"}} />
-                <AiFillYoutube style={{fontSize: "40px"}} />
-                <AiOutlineMedium style={{fontSize: "40px"}} />
-                <FaFacebookF style={{fontSize: "40px"}} />
-                <FaLinkedinIn style={{fontSize: "40px"}} />
+                <AiOutlineInstagram style={{fontSize: "30px"}} />
+                <AiOutlineTwitter style={{fontSize: "30px"}} />
+                <AiFillYoutube style={{fontSize: "30px"}} />
+                <AiOutlineMedium style={{fontSize: "30px"}} />
+                <FaFacebookF style={{fontSize: "30px"}} />
+                <FaLinkedinIn style={{fontSize: "30px"}} />
               </div>
             </div>
           </div>

@@ -4,8 +4,8 @@
   margin-top: 100px;
 }
 .mind-image {
-  width: 50px;
-}
+  width: 20px;
+} 
 
 .mind-title {
   font-weight: 600;
@@ -23,11 +23,10 @@
 .mind-lists {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
+  width: 30%;
 }
 
 .mind-item img {
-  width: 400px;
   border-top-left-radius: 55px;
   border-top-right-radius: 55px;
   transition: all 0.5s ease;
@@ -43,7 +42,6 @@
   border-bottom-left-radius: 55px;
   border-bottom-right-radius: 55px;
   z-index: 9;
-  width: 400px;
   padding: 24px 24px;
   text-align: center;
   transition: all 0.5s ease;
@@ -70,33 +68,37 @@
   font-size: 20px;
   font-weight: 600;
 }
-
-@media(max-width:1600px) {
-  .mind_content {
-    width: 350px
-  }
-}
-
 @media(max-width:1280px) {
-  .mind_lists {
-    display: block;
-  }
-
-  .mind_item {
-    width: 100%;
-    margin-top: 180px;
-  }
-
-}
-
-@media(max-width:768px) {
-  .mind_title {
-    font-size: 48px;
+  .mind-section {
+    padding: 0px 20px 0px 20px;
   }
 }
-
-/* @media(max-width:540px) {
-  .mind_title {
-    font-size: 24px;
+@media(max-width:1180px) {
+  .mind-section {
+    max-width: 840px;
   }
-} */
+  .mind-lists {
+    width: 45%;
+  }
+  .list-box {
+    flex-wrap: wrap;
+  }
+  .mind-title {
+    font-size: 45px;
+  }
+}
+@media(max-width:1180px) {
+  .mind-section {
+    max-width: 540px;
+    margin-top: 50px;
+  }
+  .mind-lists {
+    width: 80%;
+  }
+  .list-box {
+    justify-content: center;
+  }
+  .mind-title {
+    font-size: 40px;
+  }
+}

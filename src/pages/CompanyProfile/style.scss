@@ -16,3 +16,23 @@
   background-color: #111D5E;
   color: white;
 }
+@media(max-width:1023px) {
+  .company-profile {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .company-profile-img {
+    width: 50%;
+  }
+}
+@media(max-width:540px) {
+  .company-profile {
+    flex-direction: column;
+  }
+  .detail-box-title {
+    font-size: 25px;
+  }
+  .company-profile-img {
+    width: 100%;
+  }
+}

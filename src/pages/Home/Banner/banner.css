@@ -1,8 +1,3 @@
-.home_banner_section {
-  max-width: 1280px;
-  margin: auto;
-  margin-top: 30px;
-}
 .home_banner_container {
   display: flex;
 }
@@ -49,8 +44,8 @@
 .mark-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   position: relative;
+  justify-content: space-between;
 }
 .home_banner_card {
   height: fit-content;
@@ -85,9 +80,6 @@
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-  position: absolute;
-  bottom: -30px;
-  left: -195px;
 }
 .banner-mark-schedule {
   background-color: white;
@@ -99,9 +91,6 @@
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-  position: absolute;
-  bottom: -90px;
-  left: -195px;
 }
 .home-banner-bottom {
   display: flex;
@@ -112,7 +101,7 @@
   font-size: 30px;
   font-weight: 600;
   color: #111D5E;
-  width: 15%;
+  width: 25%;
   line-height: 1.5;
 }
 .bottom-arrow img {
@@ -158,4 +147,98 @@
   padding: 10px 0px;
   border-radius: 25px;
   text-align: center;
+}
+@media(max-width:1280px) {
+  .home_banner_section {
+    padding: 0px 20px 0px 20px;
+  }
+  .bottom-title {
+    width: 20%;
+  }
+}
+@media(max-width:1180px) {
+  .home_banner_section {
+    padding: 0px 20px 0px 20px;
+  }
+  .home_banner_container {
+    max-width: 840px;
+    margin: auto;
+  }
+  .container_left {
+    width: 100%;
+  }
+  .container_right {
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+  }
+  .mark-card {
+    width: 20%;
+  }
+  .home_banner_intro {
+    width: 100%;
+  }
+  .container_right img {
+    width: 30%;
+  }
+  .bottom-title {
+    display: none;
+  }
+  .bottom-arrow {
+    display: none;
+  }
+  .home_banner_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-banner-bottom {
+    justify-content: center;
+  }
+}
+@media(max-width:840px) {
+  .home_banner_container {
+    max-width: 540px;
+    margin: auto;
+  }
+  .home_banner_intro {
+    margin-top: 0px;
+    font-size: 15px;
+    line-height: 2;
+  }
+  .container_right {
+    gap: 50px;
+  }
+  .container_right img {
+    width: 50%;
+  }
+  .mark-card {
+    width: 30%;
+  }
+  .bottom-detail {
+    max-width: 540px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .detail-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .item-button {
+    padding: 5px 0px;
+    font-size: 15px;
+  }
+  .item-register {
+    padding: 5px 0px;
+    font-size: 15px;
+  }
+  .item-title {
+    font-size: 15px;
+  }
+}
+@media(max-width:540px) {
+  .mark-card {
+    width: 45%;
+  }
 }

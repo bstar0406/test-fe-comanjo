@@ -9,3 +9,14 @@
 .individual-box:hover {
   border: 1px solid #111D5E;
 }
+@media(max-width:1180px) {
+  .individual-group {
+    flex-direction: column;
+  }
+}
+@media(max-width:520px) {
+  .signUp-template {
+    padding: 0px 20px 0px 20px;
+  }
+
+}

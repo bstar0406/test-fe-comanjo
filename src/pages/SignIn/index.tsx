@@ -45,8 +45,8 @@ const SignIn = () => {
             <div className='signIn-box py-5 px-14 text-center text-[#111D5E] max-w-md m-auto'>
                 <div className='text-3xl font-semibold mb-10'>Log in to ComanJo</div>
                 <div className='flex flex-col gap-5'>
-                    <input type='text' placeholder='Your Email address' className="text-sm rounded w-full border border-gray-300" onChange={(e) => setEmail(e.target.value)}/>
-                    <input type='password' placeholder='Password' className="text-sm rounded w-full border border-gray-300" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <input type='text' placeholder='Your Email address' className="text-sm rounded-3xl px-5 w-full border border-gray-300" onChange={(e) => setEmail(e.target.value)}/>
+                    <input type='password' placeholder='Password' className="text-sm rounded-3xl px-5 w-full border border-gray-300" value={password} onChange={(e) => setPassword(e.target.value)}/>
                     <button className='sign-btn' onClick={signin}>Continue with Email</button>
                 </div>
 
