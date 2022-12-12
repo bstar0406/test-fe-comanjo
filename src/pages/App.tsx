@@ -59,7 +59,8 @@ function App() {
           <Route path=":id" element={<SeekerReview />} />
         </Route>
         <Route path="/jobcontract" element={<MainLayout />}>
-          <Route index element={user.type!==null?<JobContract />:<Navigate replace to="/" />} />
+          {/* <Route index element={user.type!==null?<JobContract />:<Navigate replace to="/" />} /> */}
+          <Route index element={<JobContract />} />
         </Route>
 
         <Route path="/auth" element={<FullLayout />}>

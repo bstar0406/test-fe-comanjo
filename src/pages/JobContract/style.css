@@ -1,0 +1,53 @@
+.submit-button:hover {
+  background-color: white;
+  color: #111D5E;
+}
+.save-button:hover {
+  background-color: #111D5E;
+  color: white;
+}
+.job-contract-banner {
+  width: 45%;
+}
+
+
+@media(max-width:1280px) {
+  .job-contract-box {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+@media(max-width:1180px) {
+  .job-contract-box {
+    max-width: 720px;
+  }
+  .job-contract-banner-box {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .job-contract-banner {
+    width: 100%;
+  }
+  .job-contract-img {
+    width: 100%;
+  }
+  .benefit-textarea {
+    width: 100%;
+  }
+  .job-desc-textarea {
+    width: 100%;
+  }
+  .end-button-group {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+@media(max-width:540px) {
+  .job-board-button-group {
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .job-contract-banner {
+    gap: 20px;
+  }
+}

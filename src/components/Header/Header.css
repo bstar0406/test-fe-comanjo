@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 24;
-  width: 100vw;
+  width: 100%;
 }
 
 .header_control {

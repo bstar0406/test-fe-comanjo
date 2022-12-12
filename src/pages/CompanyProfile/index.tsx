@@ -166,7 +166,6 @@ const CompanyProfile = () => {
 			title: "Job Taken"
 		}
 	]
-	console.log("contracts---------", contracts)
 	return (
 		<div className="flex items-center px-3 lg:px-5 w-full h-full py-32" >
 			<div className="grid grid-cols-3 gap-7 w-full max-w-7xl m-auto">
