@@ -1,7 +1,7 @@
 .arrow1_img {
   width: 400px;
   margin-left: 56%;
-  margin-top: 50px;
+  margin-top: 95px;
   z-index: -12;
   position: relative;
 }
@@ -12,8 +12,3 @@
   }
 }
 
-@media(max-width:840px) {
-  .arrow1_img {
-    margin-top: 30px;
-  }
-}

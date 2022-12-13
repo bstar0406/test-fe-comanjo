@@ -12,7 +12,7 @@ const Banner = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="home_banner_section  max-w-screen-xl m-auto mt-8">
+    <div className="home_banner_section  max-w-screen-xl m-auto mt-12">
       <div className='home_banner_container'>
         <div className='container_left'>
           <img alt="img1" src={BannerRectangular} className ='!h-[20px]' />

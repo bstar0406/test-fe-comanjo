@@ -113,7 +113,7 @@ const JobBoard = () => {
 	}
 	
 	return (
-		<div className="job-board-box m-auto max-w-7xl py-40" >
+		<div className="job-board-box m-auto max-w-7xl pt-48 pb-20"  >
 			<div className="job-board-container flex gap-7">
 				<div className="job-board-left w-[30%]">
 					<div className='job-board-individual-input flex flex-col gap-2 mb-[20px]'>
